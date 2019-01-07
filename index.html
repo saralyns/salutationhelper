@@ -1,42 +1,45 @@
 <head>
+	<title>Salutation Helper</title>
+	<meta name="description" content="A quick project created to make writing form emails a little easier.">
+	<meta name="author" content="Saralyn Santos">
 	<link rel="stylesheet" href="/main.css">
 	<script src="/script.js"></script>
 </head>
 
 <body>
-<h1>Salutation Helper</h1>
-<p>Fill in the form below with the information of the person/people whom you're emailing. Salutation Helper will take care of the rest!</p>
+	<h1>Salutation Helper</h1>
+	<p>Fill in the form below with the information of the person/people whom you're emailing. Salutation Helper will take care of the rest!</p>
 
-<div id="form">
-  <blockquote>
-    <label for="name">Who is this letter being addressed to?</label> <input type="text" placeholder="Name(s) go here" id="name">
-    <p></p>
-    <label for="department">What department are they a part of?</label> <input type="text" placeholder="Department(s) go here" id="department">
-    <p></p><label for="signature">Who is sending this email? </label><input type="text" placeholder="Your name goes here" id="signature">
-  </blockquote>
-</div>
-<button onclick="create()" id="salutations">Salutations!</button>
+	<div id="form">
+		<blockquote>
+			<label for="name">Who is this letter being addressed to?</label> <input type="text" placeholder="Name(s) go here" id="name">
+			<p></p>
+			<label for="department">What department are they a part of?</label> <input type="text" placeholder="Department(s) go here" id="department">
+			<p></p><label for="signature">Who is sending this email? </label><input type="text" placeholder="Your name goes here" id="signature">
+		</blockquote>
+	</div>
+	<button onclick="create()" id="salutations">Salutations!</button>
 
-<h3>ASK SARALYN TO REPLACE THIS EMAIL TEXT AS NECESSARY</h3>
+	<h3>ASK SARALYN TO REPLACE THIS EMAIL TEXT AS NECESSARY</h3>
 
-<!-- The text field
+	<!-- The text field
 <input type="text" id="salutation">
 
 <!-- The button used to copy the text 
 <button onclick="copy()">Copy text</button> -->
 
-<div id="email">
-  <div id="formemail">
-    <p>Hello <span id="greeting"></span>,</p>
-    <p>There are just a few spots left in the UW <a href="http://expd.uw.edu/pipeline/alternative-spring-break/literacy-arts-asb/">Literacy Arts Alternative Spring Break</a> program! We have extended the deadline to <b>January 11th.</b> Could you please share this reminder with the <span id="insertdept"></span> students and encourage them to apply? The application can be found <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYFbWqB0-Z9kgRf1tRdZ5hWiwb_y-LhqOhj9vptRVWQe4EtQ/viewform">here</a>.</p>
-    <p>Students in your department have interests and skills that are highly desired by the rural and tribal communities that we work with over Spring Break. This is an excellent opportunity for students to gain experience in curriculum-building, teaching,
-      and engaging in cultural exchange and exploration. Thank you for sharing this opportunity with them!</p>
-    <p>If you have any questions about this program, please let me know.</p>
-    <p>Thanks,
-      <br><span id="closing"></span>
-    </p>
-  </div>
-  <div id="easbinfo">
-  </div>
-</div>
-	</body>
+	<div id="email">
+		<div id="formemail">
+			<p>Hello <span id="greeting"></span>,</p>
+			<p>There are just a few spots left in the UW <a href="http://expd.uw.edu/pipeline/alternative-spring-break/literacy-arts-asb/">Literacy Arts Alternative Spring Break</a> program! We have extended the deadline to <b>January 11th.</b> Could you please share this reminder with the <span id="insertdept"></span> students and encourage them to apply? The application can be found <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYFbWqB0-Z9kgRf1tRdZ5hWiwb_y-LhqOhj9vptRVWQe4EtQ/viewform">here</a>.</p>
+			<p>Students in your department have interests and skills that are highly desired by the rural and tribal communities that we work with over Spring Break. This is an excellent opportunity for students to gain experience in curriculum-building, teaching,
+				and engaging in cultural exchange and exploration. Thank you for sharing this opportunity with them!</p>
+			<p>If you have any questions about this program, please let me know.</p>
+			<p>Thanks,
+				<br><span id="closing"></span>
+			</p>
+		</div>
+		<div id="easbinfo">
+		</div>
+	</div>
+</body>
