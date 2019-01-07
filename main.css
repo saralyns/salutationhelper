@@ -1,0 +1,29 @@
+#form {
+  background-color: lightgray;
+  width: 25em;
+  padding: 10px;
+  margin: 10px;
+  font-family: "Calibri";
+}
+
+input {
+  font-family: "Calibri";
+  font-size: 15px;
+  width: 20em;
+}
+
+#salutations {
+  width: 25em;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+
+#formemail {
+  border: 2px black solid;
+  padding: 25px;
+  font-family: "Arial";
+  font-size: 11;
+}
+
