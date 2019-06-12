@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;    
+    max-width: 80%;    
 }
 
 input {
@@ -46,11 +46,10 @@ body {
 
 #instructions {
     font-family: "Calibri";
-    width: 50vmax;
     text-align: center;
 }
 
 .image {
-    width: 50em;
-    margin: 0 20vmax;
+    max-width: 80%;
+    height: auto;
 }
