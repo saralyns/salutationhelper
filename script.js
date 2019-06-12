@@ -1,55 +1,70 @@
-function copy() {
-	/* Get the text field */
-	var copyText = document.getElementById("salutation");
-
-	/* Select the text field */
-	copyText.select();
-
-	/* Copy the text inside the text field */
-	document.execCommand("copy");
-
-	/* Alert the copied text */
-	alert("Copied the text: " + copyText.value);
-}
-
 // to salutation, append name and department
 function create() {
-	// clear salutation
-	var formemail = document.getElementById("formemail");
+  // clear salutation
+  var formemail = document.getElementById("formemail");
 
-	var name = document.getElementById("name").value;
-	var dept = document.getElementById("department").value;
-	var sig = document.getElementById("signature").value;
+  var name = document.getElementById("name").value;
+  var dept = document.getElementById("department").value;
+  var sig = document.getElementById("signature").value;
+  var q = document.getElementById("quarter").value;
 
-	var greet = document.getElementById("greeting");
-	greet.innerHTML = "";
+  var greet = document.getElementById("greeting");
+  greet.innerHTML = "";
 
-	var insertdept = document.getElementById("insertdept");
-	insertdept.innerHTML = "";
+  var insertdept = document.getElementById("insertdept");
+  insertdept.innerHTML = "";
 
-	var close = document.getElementById("closing");
-	close.innerHTML = "";
+  var close = document.getElementById("closing");
+  close.innerHTML = "";
 
-	greet.append(name);
-	insertdept.append(dept);
-	close.append(sig);
+  var qtr = document.getElementById("qtr");
+  qtr.innerHTML = "";
 
-	/* Alert the copied text 
-    alert("Updated the greeting with name: " + name + " and department: " + dept); */
+  greet.append(" " + name);
+  insertdept.append(dept);
+  close.append(sig);
+  qtr.append(q);
+
+  var title = document.getElementById("s1title").value;
+  var link = document.getElementById("s1link").value;
+  var day = document.getElementById("s1day").value;
+  var time = document.getElementById("s1time").value;
+  var desc = document.getElementById("s1desc").value;
+
+  var sem1 = document.getElementById("sem1");
+  sem1.innerHTML = sem(title, link, day, time, desc);
+
+  title = document.getElementById("s2title").value;
+  link = document.getElementById("s2link").value;
+  day = document.getElementById("s2day").value;
+  time = document.getElementById("s2time").value;
+  desc = document.getElementById("s2desc").value;
+  
+  var sem2 = document.getElementById("sem2");
+  sem2.innerHTML = sem(title, link, day, time, desc);
+
+  title = document.getElementById("s3title").value;
+  link = document.getElementById("s3link").value;
+  day = document.getElementById("s3day").value;
+  time = document.getElementById("s3time").value;
+  desc = document.getElementById("s3desc").value;
+  
+  var sem3 = document.getElementById("sem3");
+  sem3.innerHTML = sem(title, link, day, time, desc);
 }
 
-function CopyToClipboard(containerid) {
-	if (document.selection) { 
-		var range = document.body.createTextRange();
-		range.moveToElementText(document.getElementById(containerid));
-		range.select().createTextRange();
-		document.execCommand("copy"); 
-
-	} else if (window.getSelection) {
-		var range = document.createRange();
-		range.selectNode(document.getElementById(containerid));
-		window.getSelection().addRange(range);
-		document.execCommand("copy");
-		alert("text copied") 
-	}
+function sem(title, link, day, time, desc) {
+  var finaldesc =
+    "<p><b><a href='" +
+    link +
+    "'>" +
+    title +
+    "</a></b></p><p>" +
+    day +
+    " | " +
+    time +
+    "</p><p>" +
+    desc +
+    "</p>";
+  return finaldesc;
 }

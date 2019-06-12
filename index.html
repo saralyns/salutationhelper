@@ -8,38 +8,59 @@
 
 <body>
 	<h1>Salutation Helper</h1>
-	<p>Fill in the form below with the information of the person/people whom you're emailing. Salutation Helper will take care of the rest!</p>
+<p>Fill in the form below with the information of the folks you're emailing, as well as the seminars you'd like to highlight. Salutation Helper will take care of the rest!</p>
 
-	<div id="form">
-		<blockquote>
-			<label for="name">Who is this letter being addressed to?</label> <input type="text" placeholder="Name(s) go here" id="name">
-			<p></p>
-			<label for="department">What department are they a part of?</label> <input type="text" placeholder="Department(s) go here" id="department">
-			<p></p><label for="signature">Who is sending this email? </label><input type="text" placeholder="Your name goes here" id="signature">
-		</blockquote>
-	</div>
-	<button onclick="create()" id="salutations">Salutations!</button>
-
-	<h3>ASK SARALYN TO REPLACE THIS EMAIL TEXT AS NECESSARY</h3>
-
-	<!-- The text field
-<input type="text" id="salutation">
-
-<!-- The button used to copy the text 
-<button onclick="copy()">Copy text</button> -->
-
-	<div id="email">
-		<div id="formemail">
-			<p>Hello <span id="greeting"></span>,</p>
-			<p>There are just a few spots left in the UW <a href="http://expd.uw.edu/pipeline/alternative-spring-break/literacy-arts-asb/">Literacy Arts Alternative Spring Break</a> program! We have extended the deadline to <b>January 11th.</b> Could you please share this reminder with the <span id="insertdept"></span> students and encourage them to apply? The application can be found <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYFbWqB0-Z9kgRf1tRdZ5hWiwb_y-LhqOhj9vptRVWQe4EtQ/viewform">here</a>.</p>
-			<p>Students in your department have interests and skills that are highly desired by the rural and tribal communities that we work with over Spring Break. This is an excellent opportunity for students to gain experience in curriculum-building, teaching,
-				and engaging in cultural exchange and exploration. Thank you for sharing this opportunity with them!</p>
-			<p>If you have any questions about this program, please let me know.</p>
-			<p>Thanks,
-				<br><span id="closing"></span>
-			</p>
-		</div>
-		<div id="easbinfo">
-		</div>
-	</div>
+<div id="form">
+  <p><label for="name">Who is this letter being addressed to?</label> <input type="text" placeholder="Name(s) go here" id="name" required></p>
+  <p><label for="department">What department are they a part of?</label> <input type="text" placeholder="Department(s) go here" id="department" required></p>
+  <p><label for="signature">Who is sending this email? </label><input type="text" placeholder="Your name goes here" id="signature" required></p>
+  <p><label for="quarter">What quarter are you recruiting for?</label> <input type="text" id="quarter" placeholder="Autumn, Winter, Spring, Summer" required>
+    <p>======</p>
+    <p><b>Seminar 1</b></p>
+    <p><label for="s1title">Seminar title: </label><input type="text" id="s1title"></p>
+    <p><label for="s1link">Link to seminar page on Pipeline site: </label><input type="text" id="s1link"></p>
+    <p><label for="s1day">What day is the seminar? </label><input type="text" id="s1day"></p>
+    <p><label for="s1time">What time is the seminar? </label><input type="text" id="s1time">
+      <p><label for="s1desc">Seminar description: </label><input type="text" id="s1desc"></p>
+      <p>======</p>
+      <p><b>Seminar 2</b></p>
+      <p><label for="s2title">Seminar title: </label><input type="text" id="s2title"></p>
+      <p><label for="s2link">Link to seminar page on Pipeline site: </label><input type="text" id="s2link"></p>
+      <p><label for="s2day">What day is the seminar? </label><input type="text" id="s2day"></p>
+      <p><label for="s2time">What time is the seminar? </label><input type="text" id="s2time">
+        <p><label for="s2desc">Seminar description: </label><input type="text" id="s2desc"></p>
+        <p>======</p>
+        <p><b>Seminar 3</b></p>
+        <p><label for="s3title">Seminar title: </label><input type="text" id="s3title"></p>
+        <p><label for="s3link">Link to seminar page on Pipeline site: </label><input type="text" id="s3link"></p>
+        <p><label for="s3day">What day is the seminar? </label><input type="text" id="s3day"></p>
+        <p><label for="s3time">What time is the seminar? </label><input type="text" id="s3time">
+          <p><label for="s3desc">Seminar description: </label><input type="text" id="s3desc"></p>
+</div>
+<button onclick="create()" id="salutations">Salutations!</button>
+<br><br><br>
+<div id="email">
+  <div id="formemail">
+    <p>Hello<span id="greeting"></span>,</p>
+    <p>Please help us spread the word about opportunities for the students in <span id="insertdept"></span> to tutor in Seattle elementary, middle and high schools! Could you please add this to your listserv for your students? We are looking for tutors passionate
+      about spreading their knowledge, so we really appreciate your outreach!</p>
+    <p>Thank you so much,
+      <br><span id="closing"></span>
+    </p>
+  </div>
+  <div id="info">
+    <p>=====</p>
+    <h3><a href="http://expd.uw.edu/pipeline/inner-pipeline-seminars/">Tutor at an elementary, middle or high school in Seattle during <span id="qtr"></span> Quarter!</a></h3>
+    <p>The UW Pipeline Project recruits, trains and places UW students as volunteer tutors in Seattle schools and community organizations. We are recruiting tutors for spring quarter to work with about 40 different schools, and would love to have you! We’ll
+      help you get set up tutoring in a K-12 classroom or community organization. Tutors make a minimum commitment of 2-3 hours per week for at least one quarter. You can tutor as a volunteer or take one of our EDUC 401 seminars to receive credit.</p>
+    <p>The schedule is flexible: schools need tutors Mon-Fri between 7:30 and 5pm. And we offer transportation to some of our partner schools that have the highest need for tutors.</p>
+    <h3>EDUC 401 <span id="quarter"></span> Seminar Spotlights:</h3>
+  </div>
+  <div id="sem1"></div>
+  <div id="sem2"></div>
+  <div id="sem3"></div>
+  <div id="last">
+    <b>For questions or add codes, email <a href="mailto:pipeline@uw.edu">pipeline@uw.edu</a> or come to our office in MGH 171. Check our <a href="http://expd.uw.edu/pipeline/">website</a> for more seminars and further details!</b>
+  </div>
+</div>
 </body>
