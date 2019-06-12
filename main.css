@@ -1,27 +1,46 @@
 #form {
-  background-color: lightgray;
-  width: 50em;
-  padding: 10px;
-  margin: 10px;
-  font-family: "Calibri";
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+    font-family: "Calibri";
+    border-radius: 20px;
 }
 
 input {
-  font-family: "Calibri";
-  font-size: 15px;
-  width: 50em;
+    padding: 5px;
+    font-family: "Calibri";
+    font-size: 15px;
+    width: 50em;
 }
 
 #salutations {
-  width: 25em;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
+    width: 25em;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
 }
 
 #email {
-  border: 2px black solid;
-  padding: 25px;
-  font-family: "Georgia";
-  font-size: 11;
+    border: 2px black solid;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: "Georgia";
+    font-size: 16;
+}
+
+h1 {
+    font-family: "Calibri";
+    font-size: 48;
+    text-align: center;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+#instructions {
+    font-family: "Calibri";
+    width: 50em;
+    text-align: center;
 }
