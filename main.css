@@ -4,6 +4,11 @@
     margin: 10px;
     font-family: "Calibri";
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;    
 }
 
 input {
@@ -41,10 +46,11 @@ body {
 
 #instructions {
     font-family: "Calibri";
-    width: 50em;
+    width: 50vmax;
     text-align: center;
 }
 
 .image {
     width: 50em;
+    margin: 0 20vmax;
 }
