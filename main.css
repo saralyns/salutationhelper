@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 80%;    
+    max-width: 70%;    
 }
 
 input {
@@ -19,7 +19,7 @@ input {
 }
 
 #salutations {
-    width: 25em;
+    width: 50em;
     padding: 10px;
     margin: 10px;
     text-align: center;
@@ -29,7 +29,7 @@ input {
 #email {
     border: 2px black solid;
     border-radius: 20px;
-    padding: 20px;
+    padding: 25px;
     font-family: "Georgia";
     font-size: 16;
 }
@@ -42,6 +42,10 @@ h1 {
 
 body {
     background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #instructions {
@@ -52,4 +56,8 @@ body {
 .image {
     max-width: 80%;
     height: auto;
+}
+
+.pipeline {
+    font-size: .9em
 }
